@@ -1,7 +1,11 @@
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f0f8ff;
     color: #333;
 }
@@ -28,70 +32,77 @@ header nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+.barraDePesquisa {
+    background-color: lightgreen;
 }
 
-footer {
-    background-color: #002244;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-
-}  
-footer p {
-    color: white; /* Define a cor do texto para branco */
+.barraDePesquisa input[type="text"] {
+    padding: 5px;
+    width: 200px;
 }
 
-img {
-    width: 100%; /* Ajusta a largura para preencher o container */
-    max-width: 400px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem ao redimensionar */
-    margin: 10px 0 ; /* Adiciona margem acima e abaixo da imagem */
-    display: inline-block;
+.barraDePesquisa button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
-section:after {
-    content: "";
-    display: table;
-    clear: both;
+.fraseDeImpacto {
+    background-color: grey;
 }
 
-section {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin-bottom: 20px;
+nav ul {
+    list-style-type: none;
 }
 
-h2 {
-    color: #002244;
-}
-
-article {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #b2c8da;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h3 {
-    color: #002244;
-}
-
-p {
-    color: #555555;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
 a {
-    color: #002244;
     text-decoration: none;
-    font-weight: bold;
+    color: #333;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #666;
+}
+
+.promocoes {
+    text-align: center;
+}
+
+.promocoes-carrosel {
+    overflow: hidden;
+}
+
+.promo-item {
+    display: none;
+}
+
+.promo-item img {
+    max-width: 10%;
+    max-height: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+.products ul {
+    list-style-type: none;
+}
+
+.products ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.footer {
+    text-align: center;
+    background-color: #002244;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
 }
