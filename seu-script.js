@@ -1,24 +1,26 @@
-const promoItems = document.querySelectorAll('.promo-item');
-let currentPromoIndex = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    const promoItems = document.querySelectorAll('.promo-item');
+    let indiceAtual = 0;
 
-function showPromo(index) {
-    promoItems.forEach(item => item.style.display = 'none');
-    promoItems[index].style.display = 'block';
-}
-
-function changePromo(step) {
-    currentPromoIndex += step;
-    if (currentPromoIndex < 0) {
-        currentPromoIndex = promoItems.length - 1;
-    } else if (currentPromoIndex >= promoItems.length) {
-        currentPromoIndex = 0;
+    function showPromo(index) {
+        promoItems.forEach((item, i) => {
+            if (i === index) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
     }
-    showPromo(currentPromoIndex);
-}
 
-// Mostra a primeira promoção ao carregar a página
-showPromo(currentPromoIndex);
+    function nextPromo() {
+        indiceAtual++;
+        if (indiceAtual >= promoItems.length) {
+            indiceAtual = 0;
+        }
+        showPromo(indiceAtual);
+    }
 
-// Adiciona event listeners para os botões de navegação
-document.querySelector('.prev').addEventListener('click', () => changePromo(-1));
-document.querySelector('.next').addEventListener('click', () => changePromo(1));
+    showPromo(indiceAtual); // Mostra a primeira promoção
+    setInterval(nextPromo, 2000); // Alterna as promoções a cada 2 segundos
+});
+
