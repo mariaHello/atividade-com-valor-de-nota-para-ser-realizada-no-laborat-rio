@@ -23,4 +23,3 @@ document.addEventListener('DOMContentLoaded', function () {
     showPromo(indiceAtual); // Mostra a primeira promoção
     setInterval(nextPromo, 2000); // Alterna as promoções a cada 2 segundos
 });
-
