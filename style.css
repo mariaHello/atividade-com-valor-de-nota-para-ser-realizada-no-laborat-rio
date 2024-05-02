@@ -201,7 +201,7 @@ section {
 }
 
 h2 {
-    color: #002244;
+    color: #577B33;
     margin-bottom: 20px;
 }
 
@@ -225,7 +225,7 @@ textarea {
 }
 
 button {
-    background-color: #002244;
+    background-color: #577B33;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -234,5 +234,5 @@ button {
 }
 
 button:hover {
-    background-color: #004466;
+    background-color: #577B33;
 }
