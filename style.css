@@ -236,14 +236,3 @@ button {
 button:hover {
     background-color: #004466;
 }
-
-footer {
-    background-color: #002244;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
