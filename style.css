@@ -28,7 +28,7 @@ body {
     border-radius: 40px;
 }
 footer p {
-    color: white; /* Define a cor do texto para branco */
+    color: white;
 }
 footer {
     background-color: #577B33;
@@ -49,8 +49,8 @@ footer {
 
 .slogan {
     background-color: #577B33;
-    padding: 20px 0; /* Adicionado para melhorar a aparência */
-    font-size: 25px; /* Aumentando o tamanho da fonte */
+    padding: 20px 0; 
+    font-size: 25px;
 }
 header {
     background-color: #6A9044;
@@ -90,13 +90,12 @@ a:hover {
     display: none;
 }
 
-/* Estilo para as imagens */
 .promo-item img {
     width: 25%;
     height: auto;
 }
 
-/* Estilo para os botões de navegação */
+
 .promocoes-carrosel .prev,
 .promocoes-carrosel .next {
     position: absolute;
@@ -112,11 +111,11 @@ a:hover {
 }
 
 .promocoes-carrosel .prev {
-    left: 20px; /* Posiciona à esquerda */
+    left: 20px;
 }
 
 .promocoes-carrosel .next {
-    right: 5px; /* Posiciona à direita */
+    right: 5px;
 }
 
 
