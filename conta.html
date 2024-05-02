@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proteja os Oceanos - Home</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts.js"></script>
-    <link rel="stylesheet" href="styles4.css">
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Diabetes.com </title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
 <body>
-    <header>
-        <h1>Proteja os Oceanos</h1>
+    <header><br><br>
+        <div class="header-content">
+<div><img src="Logo.png" class="logo"></div><h1> Diabetes.com </h1> <br><br>
+<div class="barraDePesquisa">
+<input type="text" placeholder="Pesquisar...">
+<button type="submit">Buscar</button>
+</div>
+<div class="slogan">Doces que fazem até a insulina sorrir!</div> <br>
+</div>
         <nav>
-            <ul>
-                <li><a href="paginaincial.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="artigos.html">Artigos</a></li>
-                <li><a href="recursos.html">Recursos Visuais</a></li>
-                <li><a href="dicas.html">Dicas Práticas</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <ul><br>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="sobre.html"> Sobre Nós </a></li>
+                <li><a href="produtos.html"> Produtos </a></li>
+                <li><a href="receitas.html"> Nossas receitas </a></li>
+                <li><a href="conta.html"> Criar Conta </a></li><br>
             </ul>
-        </nav>
+        </nav><br>
     </header>
     <main>
         <section>
-            <h2>Entre em Contato</h2>
+            <h2>Faça seu Cadastro</h2>
             <form id="form-contato">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
+
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
                 
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="senha">Senha: </label>
+                <textarea id="senha" name="senha" required></textarea>
+
+                <label for="confirmarsenha">Confirmar senha: </label>
+                <textarea id="confirmarsenha" name="confirmarsenha" required></textarea>
                 
                 <button type="submit" id="enviar-btn">Enviar</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>© 2024 Proteja os Oceanos. Todos os direitos reservados.</p>
-    </footer>
+    <p>© 2024 Diabetes.com. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
