@@ -80,65 +80,6 @@ a {
 a:hover {
     color: #666;
 }
-.promocoes-carrosel {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.promo-item {
-    display: none;
-}
-
-.promo-item img {
-    width: 25%;
-    height: auto;
-}
-
-
-.promocoes-carrosel .prev,
-.promocoes-carrosel .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente */
-    border: none;
-    color: #333;
-    font-size: 18px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.promocoes-carrosel .prev {
-    left: 20px;
-}
-
-.promocoes-carrosel .next {
-    right: 5px;
-}
-
-
-.navigation-buttons {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.prev, .next {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 
 .footer {
     text-align: center;
